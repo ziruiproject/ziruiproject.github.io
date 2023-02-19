@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .glass {
+        /* From https://css.glass */
+        background: rgba(74, 84, 99, 0.2);
+        border: 1px solid rgba(74, 84, 99, 0.2);
+        backdrop-filter: blur(12.5px);
+    }
+
+    .btn {
+        background: rgba(74, 84, 99, 0.2);
+        border: 1px solid rgba(74, 84, 99, 0.2);
+        backdrop-filter: blur(12.5px);
+        border-radius: 15px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        color: #FFF7F7;
+    }
+
+    .btn-accent {
+        background-color: rgb(8 255 200);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.2px);
+        -webkit-backdrop-filter: blur(7.2px);
+        border: 1px solid rgba(74, 84, 99, 0.09);
+        border-radius: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        color: #FFF7F7;
+    }
+
+    .title {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        text-align: center;
+        color: #08FFC8;
+    }
+
+    .paragraph {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFF7F7;
+    }
+
+    .blur {
+        filter: blur(125px);
+    }
+
+    .pricing {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        color: #FFF7F7;
+        text-align: center;
+    }
+
+    .price {
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        text-align: center;
+        color: #FFF7F7;
+        padding-top: 1rem;
+    }
+
+    .blur-50 {
+        filter: blur(50px);
+    }
+}
