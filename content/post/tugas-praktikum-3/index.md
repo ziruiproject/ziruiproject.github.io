@@ -4,7 +4,7 @@ description: "Membahas tentang algoritma sorting & searching"
 date: 2025-04-10T11:04:59Z
 image: cover.png
 math: 
-license: 
+license: false
 hidden: false
 comments: true
 draft: false
