@@ -15,7 +15,7 @@ tags:
     - Algorithm
 ---
 
-### 💡 Petunjuk Umum
+## 💡 Petunjuk Umum
 
 - Kerjakan menggunakan bahasa pemrograman Java
 - Tambahkan komentar untuk menjelaskan program
@@ -23,20 +23,18 @@ tags:
 - Program harus memenuhi Kriteria Penyelesaian
 - Jika pakai AI (ChatGPT, Deepseek, dll), nilai 0
 
-
-### 📘 Istilah Umum
+## 📘 Istilah Umum
 
 - **Elemen**: Nilai yang ada di dalam array. Contoh dalam array `{5, 4, 3}`, maka `5` saja adalah elemen, `4` saja adalah elemen, dan `3` saja adalah elemen
 - **Target**: Nilai yang ingin dicari di dalam array
 
+## Sorting Misterius 1
 
-### Sorting Misterius 1
-
-**Perintah:**
+### **Perintah:**
 
 Buat program untuk mengurutkan array dengan cara mencari nilai terbesar atau terkecil, kemudian ditukar sampai array terurut secara Ascending.  
 
-**Kriteria Penyelesaian:**
+### **Kriteria Penyelesaian:**
 
 1. Program ditulis dalam method bernama
 
@@ -49,14 +47,13 @@ Buat program untuk mengurutkan array dengan cara mencari nilai terbesar atau ter
 4. Program harus menampilkan array sebelum diurutkan dan setelah diurutkan
 5. Program bisa dipanggil di Main Method
 
+## Sorting Misterius 2
 
-### Sorting Misterius 2
-
-**Perintah:**
+### **Perintah:**
 
 Buat program untuk mengurutkan array dengan cara mengecek secara berpasangan setiap elemen di dalam array tersebut, kemudian ditukar sampai array terurut secara Descending.
 
-**Kriteria Penyelesaian:**
+### **Kriteria Penyelesaian:**
 
 1. Program ditulis dalam method bernama
 
@@ -69,11 +66,9 @@ Buat program untuk mengurutkan array dengan cara mengecek secara berpasangan set
 4. Program harus menampilkan array sebelum diurutkan dan setelah diurutkan
 5. Program bisa dipanggil di Main Method
 
----
+## Sorting Misterius 3
 
-### Sorting Misterius 3
-
-**Perintah:**
+### **Perintah:**
 
 Buat program untuk mengurutkan array dengan cara membandingkan dengan elemen di sebelah kirinya, kemudian ditukar sampai array terurut secara Ascending.  
 
@@ -90,14 +85,13 @@ Buat program untuk mengurutkan array dengan cara membandingkan dengan elemen di 
 4. Program harus menampilkan array sebelum diurutkan dan setelah diurutkan
 5. Program bisa dipanggil di Main Method
 
+## Searching Misterius 1
 
-### Searching Misterius 1
-
-**Perintah:**
+### **Perintah:**
 
 Buat program untuk mencari elemen dalam array dengan cara mengambil elemen di tengah, lalu membagi array menjadi dua bagian secara terus menerus hingga menemukan elemen yang dicari atau sampai tidak ditemukan.
 
-**Kriteria Penyelesaian:**
+### **Kriteria Penyelesaian:**
 
 1. Program ditulis dalam method bernama
 
@@ -112,13 +106,13 @@ Buat program untuk mencari elemen dalam array dengan cara mengambil elemen di te
 6. Program bisa dipanggil di Main Method
 
 
-### Searching Misterius 2
+## Searching Misterius 2
 
-**Perintah:**
+### **Perintah:**
 
 Buat program untuk mencari elemen dalam array dengan cara mencari elemen satu per satu dari index pertama hingga akhir sampai menemukan elemen yang dicari atau sampai tidak ditemukan.
 
-**Kriteria Penyelesaian:**
+### **Kriteria Penyelesaian:**
 
 1. Program ditulis dalam method bernama
 
@@ -134,7 +128,7 @@ Buat program untuk mencari elemen dalam array dengan cara mencari elemen satu pe
 5. Program harus menampilkan indeks elemen jika ditemukan, dan `-1` jika tidak ditemukan
 6. Program bisa dipanggil di Main Method
 
-### 🗓️ Deadline
+## 🗓️ Deadline
 
 - Tugas ini harus dikumpulkan **paling lambat** pada:
 
