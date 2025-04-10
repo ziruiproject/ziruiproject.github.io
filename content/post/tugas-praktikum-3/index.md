@@ -30,11 +30,11 @@ tags:
 
 ## Sorting Misterius 1
 
-### **Perintah:**
+### **Perintah**
 
 Buat program untuk mengurutkan array dengan cara mencari nilai terbesar atau terkecil, kemudian ditukar sampai array terurut secara Ascending.  
 
-### **Kriteria Penyelesaian:**
+### **Kriteria Penyelesaian**
 
 1. Program ditulis dalam method bernama
 
@@ -49,11 +49,11 @@ Buat program untuk mengurutkan array dengan cara mencari nilai terbesar atau ter
 
 ## Sorting Misterius 2
 
-### **Perintah:**
+### **Perintah**
 
 Buat program untuk mengurutkan array dengan cara mengecek secara berpasangan setiap elemen di dalam array tersebut, kemudian ditukar sampai array terurut secara Descending.
 
-### **Kriteria Penyelesaian:**
+### **Kriteria Penyelesaian**
 
 1. Program ditulis dalam method bernama
 
@@ -68,11 +68,11 @@ Buat program untuk mengurutkan array dengan cara mengecek secara berpasangan set
 
 ## Sorting Misterius 3
 
-### **Perintah:**
+### **Perintah**
 
 Buat program untuk mengurutkan array dengan cara membandingkan dengan elemen di sebelah kirinya, kemudian ditukar sampai array terurut secara Ascending.  
 
-**Kriteria Penyelesaian:**
+**Kriteria Penyelesaian**
 
 1. Program ditulis dalam method bernama
 
@@ -87,11 +87,11 @@ Buat program untuk mengurutkan array dengan cara membandingkan dengan elemen di 
 
 ## Searching Misterius 1
 
-### **Perintah:**
+### **Perintah**
 
 Buat program untuk mencari elemen dalam array dengan cara mengambil elemen di tengah, lalu membagi array menjadi dua bagian secara terus menerus hingga menemukan elemen yang dicari atau sampai tidak ditemukan.
 
-### **Kriteria Penyelesaian:**
+### **Kriteria Penyelesaian**
 
 1. Program ditulis dalam method bernama
 
@@ -108,11 +108,11 @@ Buat program untuk mencari elemen dalam array dengan cara mengambil elemen di te
 
 ## Searching Misterius 2
 
-### **Perintah:**
+### **Perintah**
 
 Buat program untuk mencari elemen dalam array dengan cara mencari elemen satu per satu dari index pertama hingga akhir sampai menemukan elemen yang dicari atau sampai tidak ditemukan.
 
-### **Kriteria Penyelesaian:**
+### **Kriteria Penyelesaian**
 
 1. Program ditulis dalam method bernama
 
