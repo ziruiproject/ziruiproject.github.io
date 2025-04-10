@@ -72,7 +72,7 @@ Buat program untuk mengurutkan array dengan cara mengecek secara berpasangan set
 
 Buat program untuk mengurutkan array dengan cara membandingkan dengan elemen di sebelah kirinya, kemudian ditukar sampai array terurut secara Ascending.  
 
-**Kriteria Penyelesaian**
+### **Kriteria Penyelesaian**
 
 1. Program ditulis dalam method bernama
 
