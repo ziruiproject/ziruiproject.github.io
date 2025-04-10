@@ -132,7 +132,7 @@ Buat program untuk mencari elemen dalam array dengan cara mencari elemen satu pe
 
 - Tugas ini harus dikumpulkan **paling lambat** pada:
 
-  📅 **Hari/Tanggal**: 17 April 2025  
+  📅 **Hari/Tanggal**: Senin, 14 April 2025  
   ⏰ **Pukul**: 18:00 WIB
 
 - Pengumpulan dilakukan melalui MyITS Classroom
