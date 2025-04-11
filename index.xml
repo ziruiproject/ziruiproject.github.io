@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Yudha Sugiharto</title><link>https://ziruiproject.github.io/</link><description>Recent content on Yudha Sugiharto</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 10 Apr 2025 11:04:59 +0000</lastBuildDate><atom:link href="https://ziruiproject.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Tugas Pertemuan Ke 3</title><link>https://ziruiproject.github.io/post/tugas-pertemuan-ke-3/</link><pubDate>Thu, 10 Apr 2025 11:04:59 +0000</pubDate><guid>https://ziruiproject.github.io/post/tugas-pertemuan-ke-3/</guid><description>&lt;img src="https://ziruiproject.github.io/post/tugas-pertemuan-ke-3/cover.png" alt="Featured image of post Tugas Pertemuan Ke 3" />&lt;h2 id="-petunjuk-umum">💡 Petunjuk Umum
+&lt;/h2>&lt;ul>
+&lt;li>Kerjakan menggunakan bahasa pemrograman Java&lt;/li>
+&lt;li>Tambahkan komentar untuk menjelaskan program&lt;/li>
+&lt;li>Tulislah kode dengan rapi&lt;/li>
+&lt;li>Program harus memenuhi Kriteria Penyelesaian&lt;/li>
+&lt;li>Jika pakai AI (ChatGPT, Deepseek, dll), nilai 0&lt;/li>
+&lt;/ul>
+&lt;h2 id="-istilah-umum">📘 Istilah Umum
+&lt;/h2>&lt;ul>
+&lt;li>&lt;strong>Elemen&lt;/strong>: Nilai yang ada di dalam array. Contoh dalam array &lt;code>{5, 4, 3}&lt;/code>, maka &lt;code>5&lt;/code> saja adalah elemen, &lt;code>4&lt;/code> saja adalah elemen, dan &lt;code>3&lt;/code> saja adalah elemen&lt;/li>
+&lt;li>&lt;strong>Target&lt;/strong>: Nilai yang ingin dicari di dalam array&lt;/li>
+&lt;/ul>
+&lt;h2 id="sorting-misterius-1">Sorting Misterius 1
+&lt;/h2>&lt;h3 id="perintah">&lt;strong>Perintah&lt;/strong>
+&lt;/h3>&lt;p>Buat program untuk mengurutkan array dengan cara mencari nilai terbesar atau terkecil, kemudian ditukar sampai array terurut secara Ascending.&lt;/p>
+&lt;h3 id="kriteria-penyelesaian">&lt;strong>Kriteria Penyelesaian&lt;/strong>
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>Program ditulis dalam method bernama&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kd">static&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">SortingMisterius1&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">arr&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan setiap iterasi yang terjadi&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan jumlah iterasi dan pertukaran (swap) yang terjadi&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan array sebelum diurutkan dan setelah diurutkan&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program bisa dipanggil di Main Method&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="sorting-misterius-2">Sorting Misterius 2
+&lt;/h2>&lt;h3 id="perintah-1">&lt;strong>Perintah&lt;/strong>
+&lt;/h3>&lt;p>Buat program untuk mengurutkan array dengan cara mengecek secara berpasangan setiap elemen di dalam array tersebut, kemudian ditukar sampai array terurut secara Descending.&lt;/p>
+&lt;h3 id="kriteria-penyelesaian-1">&lt;strong>Kriteria Penyelesaian&lt;/strong>
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>Program ditulis dalam method bernama&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kd">static&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">SortingMisterius2&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">arr&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan setiap iterasi yang terjadi&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan jumlah iterasi dan pertukaran (swap) yang terjadi&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan array sebelum diurutkan dan setelah diurutkan&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program bisa dipanggil di Main Method&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="sorting-misterius-3">Sorting Misterius 3
+&lt;/h2>&lt;h3 id="perintah-2">&lt;strong>Perintah&lt;/strong>
+&lt;/h3>&lt;p>Buat program untuk mengurutkan array dengan cara membandingkan dengan elemen di sebelah kirinya, kemudian ditukar sampai array terurut secara Ascending.&lt;/p>
+&lt;h3 id="kriteria-penyelesaian-2">&lt;strong>Kriteria Penyelesaian&lt;/strong>
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>Program ditulis dalam method bernama&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kd">static&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">SortingMisterius3&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">arr&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan setiap iterasi yang terjadi&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan jumlah iterasi dan pertukaran (swap) yang terjadi&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan array sebelum diurutkan dan setelah diurutkan&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program bisa dipanggil di Main Method&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="searching-misterius-1">Searching Misterius 1
+&lt;/h2>&lt;h3 id="perintah-3">&lt;strong>Perintah&lt;/strong>
+&lt;/h3>&lt;p>Buat program untuk mencari elemen dalam array dengan cara mengambil elemen di tengah, lalu membagi array menjadi dua bagian secara terus menerus hingga menemukan elemen yang dicari atau sampai tidak ditemukan.&lt;/p>
+&lt;h3 id="kriteria-penyelesaian-3">&lt;strong>Kriteria Penyelesaian&lt;/strong>
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>Program ditulis dalam method bernama&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kd">static&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">SearchingMisterius&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">arr&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">target&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Program harus dapat mencari elemen meskipun array tidak terurut&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan array yang sedang diproses di setiap iterasi&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan jumlah iterasi yang terjadi&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan indeks elemen jika ditemukan, dan &lt;code>-1&lt;/code> jika tidak ditemukan&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program bisa dipanggil di Main Method&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="searching-misterius-2">Searching Misterius 2
+&lt;/h2>&lt;h3 id="perintah-4">&lt;strong>Perintah&lt;/strong>
+&lt;/h3>&lt;p>Buat program untuk mencari elemen dalam array dengan cara mencari elemen satu per satu dari index pertama hingga akhir sampai menemukan elemen yang dicari atau sampai tidak ditemukan.&lt;/p>
+&lt;h3 id="kriteria-penyelesaian-4">&lt;strong>Kriteria Penyelesaian&lt;/strong>
+&lt;/h3>&lt;ol>
+&lt;li>
+&lt;p>Program ditulis dalam method bernama&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">public&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kd">static&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">double&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nf">SearchingMisterius&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">double&lt;/span>&lt;span class="o">[]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">arr&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kt">double&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">target&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>Program harus dapat mencari elemen meskipun array tidak terurut&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan pesan:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>&amp;quot;Elemen tidak sama dengan target&amp;quot;&lt;/code> saat elemen yang dicek bukan target&lt;/li>
+&lt;li>&lt;code>&amp;quot;Elemen sama dengan target&amp;quot;&lt;/code> saat elemen yang dicek adalah target&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan jumlah iterasi yang terjadi&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program harus menampilkan indeks elemen jika ditemukan, dan &lt;code>-1&lt;/code> jika tidak ditemukan&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Program bisa dipanggil di Main Method&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="-deadline">🗓️ Deadline
+&lt;/h2>&lt;ul>
+&lt;li>
+&lt;p>Tugas ini harus dikumpulkan &lt;strong>paling lambat&lt;/strong> pada:&lt;/p>
+&lt;p>📅 &lt;strong>Hari/Tanggal&lt;/strong>: Senin, 14 April 2025&lt;br>
+⏰ &lt;strong>Pukul&lt;/strong>: 18:00 WIB&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Pengumpulan dilakukan melalui MyITS Classroom&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>⛔ &lt;strong>Catatan&lt;/strong>: Tugas yang terlambat, hanya dapat nilai maksimal 50 saja.&lt;/p></description></item><item><title>Archives</title><link>https://ziruiproject.github.io/archives/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://ziruiproject.github.io/archives/</guid><description/></item><item><title>Search</title><link>https://ziruiproject.github.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ziruiproject.github.io/search/</guid><description/></item></channel></rss>
