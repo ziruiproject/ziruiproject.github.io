@@ -117,7 +117,7 @@ Buat program untuk mencari elemen dalam array dengan cara mencari elemen satu pe
 1. Program ditulis dalam method bernama
 
     ```java
-    public static int[] SearchingMisterius(double[] arr, double target)
+    public static double[] SearchingMisterius(double[] arr, double target)
     ```
 
 2. Program harus dapat mencari elemen meskipun array tidak terurut
