@@ -8,6 +8,10 @@ license: false
 hidden: false
 comments: true
 draft: false
+categories: 
+    - Teaching
+tags:
+    - Tips & Trick
 ---
 
 ## 📝 Persiapan
