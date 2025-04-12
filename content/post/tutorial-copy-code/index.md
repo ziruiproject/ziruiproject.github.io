@@ -46,7 +46,7 @@ VSCode bisa langsung copy kode dengan rapi tanpa alat bantuan
 
 ### ⚠️ Perhatikan
 
-Format warna & text akan mengikuti settingan dari VSCode, jadi perhatikan tema & settingan yang digunakan
+Format warna & text akan mengikuti settingan dari VSCode, jadi perhatikan tema & settingan yang kamu gunakan
 
 ### Menyalin Kode dari VSCode
 
