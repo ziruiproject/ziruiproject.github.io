@@ -31,15 +31,15 @@ Linear Search adalah metode untuk mencari data dengan cara mengecek elemen satu 
 
 ##### Secara Umum
 
-{{< video src="LinearSearchScene.mp4" autoplay="false">}}
+{{< video src="LinearSearchScene.mp4">}}
 
 ##### Jika Tidak Ketemu
 
-{{< video src="LinearSearchNotFound.mp4" autoplay="false">}}
+{{< video src="LinearSearchNotFound.mp4">}}
 
 ##### Jika Nilai Duplikat
 
-{{< video src="LinearSearchDuplicate.mp4" autoplay="false">}}
+{{< video src="LinearSearchDuplicate.mp4">}}
 
 #### Kode
 
