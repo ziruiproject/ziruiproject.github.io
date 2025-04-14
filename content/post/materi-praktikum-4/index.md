@@ -125,7 +125,7 @@ Di Java, macam-macam kesalahan saat Runtime Error direpresentasikan dengan istil
 Ada banyak jenis Exception, contohnya sebagai berikut:
 
 | **Exception**                   | **Kegunaan / Deskripsi**                                                               |
-|------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `NullPointerException`         | Terjadi saat mencoba menggunakan objek yang bernilai `null`                            |
 | `ArrayIndexOutOfBoundsException` | Index array diakses melebihi batas                                                      |
 | `ArithmeticException`          | Kesalahan dalam operasi matematika, seperti pembagian dengan nol                       |
