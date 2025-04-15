@@ -15,6 +15,8 @@ tags:
     - Algorithm
 ---
 
+![Image 1](qr.png)
+
 ## Error
 
 ### Pengertian
