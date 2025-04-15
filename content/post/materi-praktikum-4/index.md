@@ -15,8 +15,6 @@ tags:
     - Algorithm
 ---
 
-![](qr.png)
-
 ## Error
 
 ### Pengertian
@@ -343,3 +341,5 @@ public class ValidasiPassword {
     }
 }
 ```
+
+![Link Artikel](qr.png)
