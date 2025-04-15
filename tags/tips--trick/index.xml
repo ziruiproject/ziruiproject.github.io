@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tips &amp; Trick on Yudha Sugiharto</title><link>https://ziruiproject.github.io/tags/tips--trick/</link><description>Recent content in Tips &amp; Trick on Yudha Sugiharto</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 11 Apr 2025 16:25:24 +0000</lastBuildDate><atom:link href="https://ziruiproject.github.io/tags/tips--trick/index.xml" rel="self" type="application/rss+xml"/><item><title>Copy Code Rapi ke Docs</title><link>https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/</link><pubDate>Fri, 11 Apr 2025 16:25:24 +0000</pubDate><guid>https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/</guid><description>&lt;img src="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/cover.png" alt="Featured image of post Copy Code Rapi ke Docs" />&lt;h2 id="-persiapan">📝 Persiapan
+&lt;/h2>&lt;ul>
+&lt;li>Alat Ngoding (Netbeans, VS Code, Intellij IDEA)&lt;/li>
+&lt;li>Google Docs / MS Word&lt;/li>
+&lt;/ul>
+&lt;h2 id="netbeans">Netbeans
+&lt;/h2>&lt;p>Jika kamu pakai Netbeans, maka bisa mengikuti cara berikut&lt;/p>
+&lt;h3 id="menyalin-kode-dari-netbeans">Menyalin Kode dari NetBeans
+&lt;/h3>&lt;ol>
+&lt;li>Buka Netbeans, lalu copy kode yang diinginkan
+&lt;img src="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/netbeans1.png"
+width="1013"
+height="896"
+srcset="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/netbeans1_hu_d29b262b7a0e5deb.png 480w, https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/netbeans1_hu_7b7779cfbd1fde63.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="113"
+data-flex-basis="271px"
+>&lt;/li>
+&lt;li>Buka &lt;a class="link" href="https://highlight.hohli.com/?language=java&amp;amp;theme=github&amp;amp;numbers=" target="_blank" rel="noopener"
+>website ini&lt;/a>, kemudian paste kode tadi ke web tersebut
+&lt;img src="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image.png"
+width="1013"
+height="896"
+srcset="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image_hu_5f76b5d000734f3e.png 480w, https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image_hu_72dbae096e65ae36.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="113"
+data-flex-basis="271px"
+>&lt;/li>
+&lt;li>Klik tombol &lt;strong>Highlight Code&lt;/strong>
+&lt;img src="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-1.png"
+width="1013"
+height="151"
+srcset="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-1_hu_ad9472a321f51b6b.png 480w, https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-1_hu_e206d575e44117b8.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="670"
+data-flex-basis="1610px"
+>&lt;/li>
+&lt;li>Nanti dibawah akan muncul kode yang sudah diformat
+&lt;img src="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-2.png"
+width="1069"
+height="861"
+srcset="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-2_hu_da38516f4fe90799.png 480w, https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-2_hu_7acc2ce0ac529832.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="124"
+data-flex-basis="297px"
+>&lt;/li>
+&lt;li>Lalu klik &lt;strong>Copy to clipboard&lt;/strong>
+&lt;img src="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-3.png"
+width="1069"
+height="861"
+srcset="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-3_hu_5f43010f6dedec1d.png 480w, https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-3_hu_b852a6d3c7cd3848.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="124"
+data-flex-basis="297px"
+>&lt;/li>
+&lt;li>Buka Google Docs atau Word lalu &lt;strong>paste&lt;/strong> atau &lt;kbd>CTRL&lt;/kbd> + &lt;kbd>V&lt;/kbd>
+&lt;img src="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-4.png"
+width="1069"
+height="861"
+srcset="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-4_hu_611b4f77130eddd2.png 480w, https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-4_hu_85557786f8b62b40.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="124"
+data-flex-basis="297px"
+>&lt;/li>
+&lt;/ol>
+&lt;p>Sekarang kode kamu dari Netbeans sudah rapi&lt;/p>
+&lt;h2 id="vscode">VSCode
+&lt;/h2>&lt;p>VSCode bisa langsung copy kode dengan rapi tanpa alat bantuan&lt;/p>
+&lt;h3 id="-perhatikan">⚠️ Perhatikan
+&lt;/h3>&lt;p>Format warna &amp;amp; text akan mengikuti settingan dari VSCode, jadi perhatikan tema &amp;amp; settingan yang kamu gunakan&lt;/p>
+&lt;h3 id="menyalin-kode-dari-vscode">Menyalin Kode dari VSCode
+&lt;/h3>&lt;ol>
+&lt;li>Buka VSCode, copy kode yang diinginkan
+&lt;img src="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-5.png"
+width="1243"
+height="974"
+srcset="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-5_hu_fb6b3427577bfb62.png 480w, https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-5_hu_e11413fd7f21899.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="127"
+data-flex-basis="306px"
+>&lt;/li>
+&lt;li>Langsung paste ke Google Docs atau Word
+&lt;img src="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-6.png"
+width="1069"
+height="861"
+srcset="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-6_hu_1bbeb736f5b53842.png 480w, https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-6_hu_f7b5b41142de4938.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="124"
+data-flex-basis="297px"
+>&lt;/li>
+&lt;/ol>
+&lt;h2 id="intellij-idea">Intellij IDEA
+&lt;/h2>&lt;p>Intellij IDEA juga bisa copy kode dengan rapi tanpa alat bantuan&lt;/p>
+&lt;h3 id="-perhatikan-1">⚠️ Perhatikan
+&lt;/h3>&lt;p>Format warna akan mengikuti dari settingan Intellij IDEA&lt;/p>
+&lt;h3 id="menyalin-kode-dari-intellij-idea">Menyalin Kode dari Intellij IDEA
+&lt;/h3>&lt;ol>
+&lt;li>Buka Intellij IDEA, copy kode yang diinginkan
+&lt;img src="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-7.png"
+width="1280"
+height="700"
+srcset="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-7_hu_34cd7336388dbcd2.png 480w, https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-7_hu_b736617de5a249a2.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="182"
+data-flex-basis="438px"
+>&lt;/li>
+&lt;li>Langsung paste ke Google Docs atau Word
+&lt;img src="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-8.png"
+width="1069"
+height="861"
+srcset="https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-8_hu_f9fa4b30394b8e67.png 480w, https://ziruiproject.github.io/post/copy-code-rapi-ke-docs/image-8_hu_6374bf3df972d76f.png 1024w"
+loading="lazy"
+alt="alt text"
+class="gallery-image"
+data-flex-grow="124"
+data-flex-basis="297px"
+>&lt;/li>
+&lt;/ol></description></item></channel></rss>
