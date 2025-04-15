@@ -118,23 +118,24 @@ Fokus utama dalam menangani Runtime Error adalah **program tidak boleh mati.** M
 
 ### Pengertian
 
-Di Java, macam-macam kesalahan saat Runtime Error direpresentasikan dengan istilah Exception.
+Di Java, macam-macam kesalahan saat Runtime Error **yang masih bisa ditangani** direpresentasikan dengan istilah Exception.
 
 ### Jenis-Jenis
 
 Ada banyak jenis Exception, contohnya sebagai berikut:
 
 | **Exception**                   | **Kegunaan / Deskripsi**                                                               |
-|--------------------------------|------------------------------------------------------------------------------------------|
-| `NullPointerException`         | Terjadi saat mencoba menggunakan objek yang bernilai `null`                            |
-| `ArrayIndexOutOfBoundsException` | Index array diakses melebihi batas                                                      |
-| `ArithmeticException`          | Kesalahan dalam operasi matematika, seperti pembagian dengan nol                       |
-| `NumberFormatException`        | Gagal mengubah string ke angka karena format tidak valid                                |
-| `IllegalArgumentException`     | Parameter tidak valid diberikan ke sebuah method                                       |
-| `IOException`                  | Terjadi saat kesalahan input/output, seperti membaca/menulis file                      |
-| `FileNotFoundException`        | File yang dicari tidak ditemukan                                                        |
-| `ClassCastException`           | Gagal dalam konversi tipe objek secara eksplisit                                       |
-| `InterruptedException`         | Terjadi saat thread yang sedang berjalan terganggu (biasanya saat `sleep` atau `wait`) |
+|----------------------------------|---------------------------------------------------------------------------------------|
+| `Exception`                     | Merupakan kelas induk dari semua exception di Java. Menangani kesalahan umum yang terjadi di runtime. |
+| `NullPointerException`          | Terjadi saat mencoba menggunakan objek yang bernilai `null`                           |
+| `ArrayIndexOutOfBoundsException`| Index array diakses melebihi batas                                                   |
+| `ArithmeticException`           | Kesalahan dalam operasi matematika, seperti pembagian dengan nol                    |
+| `NumberFormatException`         | Gagal mengubah string ke angka karena format tidak valid                             |
+| `IllegalArgumentException`      | Parameter tidak valid diberikan ke sebuah method                                    |
+| `IOException`                   | Terjadi saat kesalahan input/output, seperti membaca/menulis file                    |
+| `FileNotFoundException`         | File yang dicari tidak ditemukan                                                     |
+| `ClassCastException`            | Gagal dalam konversi tipe objek secara eksplisit                                    |
+| `InterruptedException`          | Terjadi saat thread yang sedang berjalan terganggu (biasanya saat `sleep` atau `wait`)|
 
 ### Kegunaan
 
