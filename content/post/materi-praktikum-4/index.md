@@ -124,8 +124,10 @@ Di Java, macam-macam kesalahan saat Runtime Error direpresentasikan dengan istil
 
 Ada banyak jenis Exception, contohnya sebagai berikut:
 
+<div style="overflow-x: auto">
+
 | **Exception**                   | **Kegunaan / Deskripsi**                                                               |
-|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------------------|------------------------------------------------------------------------------------------|
 | `NullPointerException`         | Terjadi saat mencoba menggunakan objek yang bernilai `null`                            |
 | `ArrayIndexOutOfBoundsException` | Index array diakses melebihi batas                                                      |
 | `ArithmeticException`          | Kesalahan dalam operasi matematika, seperti pembagian dengan nol                       |
@@ -135,6 +137,9 @@ Ada banyak jenis Exception, contohnya sebagai berikut:
 | `FileNotFoundException`        | File yang dicari tidak ditemukan                                                        |
 | `ClassCastException`           | Gagal dalam konversi tipe objek secara eksplisit                                       |
 | `InterruptedException`         | Terjadi saat thread yang sedang berjalan terganggu (biasanya saat `sleep` atau `wait`) |
+
+</div>
+
 
 ### Kegunaan
 
