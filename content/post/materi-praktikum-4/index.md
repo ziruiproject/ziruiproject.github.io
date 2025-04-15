@@ -15,7 +15,7 @@ tags:
     - Algorithm
 ---
 
-![Image 1](qr.png)
+![](qr.png)
 
 ## Error
 
