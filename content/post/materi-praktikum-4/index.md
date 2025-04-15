@@ -124,8 +124,6 @@ Di Java, macam-macam kesalahan saat Runtime Error direpresentasikan dengan istil
 
 Ada banyak jenis Exception, contohnya sebagai berikut:
 
-<div style="overflow-x: auto">
-
 | **Exception**                   | **Kegunaan / Deskripsi**                                                               |
 |--------------------------------|------------------------------------------------------------------------------------------|
 | `NullPointerException`         | Terjadi saat mencoba menggunakan objek yang bernilai `null`                            |
@@ -137,9 +135,6 @@ Ada banyak jenis Exception, contohnya sebagai berikut:
 | `FileNotFoundException`        | File yang dicari tidak ditemukan                                                        |
 | `ClassCastException`           | Gagal dalam konversi tipe objek secara eksplisit                                       |
 | `InterruptedException`         | Terjadi saat thread yang sedang berjalan terganggu (biasanya saat `sleep` atau `wait`) |
-
-</div>
-
 
 ### Kegunaan
 
@@ -153,7 +148,7 @@ Saat program mengalami Runtime Error, program akan "melempar" Exception terkait,
 
 ### Try Catch
 
-Untuk menangkap Exception, kamu perlu menggunakan try-catch expression. 
+Untuk menangkap Exception, kamu perlu menggunakan try-catch expression.
 
 #### Penggunaan Dasar Try Catch
 
@@ -197,9 +192,10 @@ Contohnya:
 
 ```java
 public static void main(String[] args) {
+    // Menyebabkan beberapa jenis exception
     try {
-        // Menyebabkan beberapa jenis exception
         String str = null;
+
          // NullPointerException
         System.out.println(str.length());
 
@@ -207,6 +203,7 @@ public static void main(String[] args) {
         int result = 10 / 0;
 
         String[] arr = new String[2];
+
         // ArrayIndexOutOfBoundsException
         System.out.println(arr[5]);
     } 
@@ -225,6 +222,121 @@ public static void main(String[] args) {
     // Menangkap semua jenis Exception lainnya (seperti else)
     catch (Exception e) {
         System.out.println("Terjadi kesalahan lain yang tidak terduga: " + e.getMessage());
+    }
+}
+```
+
+#### Finally
+
+Selain try-catch, kamu bisa menambahkan blok Finally. Blok ini akan selalu dijalankan baik terjadi Exception ataupun tidak.
+
+Contohnya:
+
+```java
+public static void main(String[] args) {
+    // Menyebabkan beberapa jenis exception
+    try {
+        String str = null;
+
+         // NullPointerException
+        System.out.println(str.length());
+
+        // ArithmeticException
+        int result = 10 / 0;
+
+        String[] arr = new String[2];
+
+        // ArrayIndexOutOfBoundsException
+        System.out.println(arr[5]);
+    } 
+    // Menangkap NullPointerException
+    catch (NullPointerException e) { 
+        System.out.println("Terjadi kesalahan: " + e.getMessage());
+    } 
+    // Menangkap ArithmeticException
+    catch (ArithmeticException e) { 
+        System.out.println("Terjadi kesalahan aritmatika: " + e.getMessage());
+    }
+    // Menangkap ArrayIndexOutOfBoundsException
+    catch (ArrayIndexOutOfBoundsException e) {
+        System.out.println("Indeks array tidak valid: " + e.getMessage());
+    }
+    // Menangkap semua jenis Exception lainnya (seperti else)
+    catch (Exception e) {
+        System.out.println("Terjadi kesalahan lain yang tidak terduga: " + e.getMessage());
+    } 
+    // Ini akan selalu dieksekusi apapun yang terjadi
+    finally {
+        System.out.println("Blok finally dieksekusi: proses selesai.");
+    }
+```
+
+### Throw and Throws
+
+Throw dan Throws digunakan untuk melempar Exception.
+
+#### Throw
+
+Digunakan untuk melempar Exception secara manual. Digunakan jika kita ingin sengaja memunculkan error.
+
+#### Penggunaan Throw
+
+Secara umum, Throw bisa ditulis seperti berikut:
+
+```java
+throw new Exception("Pesan error");
+```
+
+Contoh pengguaan:
+
+```java
+public static void main(String[] args) {
+    int usia = 15;
+    if (usia < 13) {
+        throw new IllegalArgumentException("Usia harus 13 tahun ke atas.");
+    }
+}
+```
+
+#### Throws
+
+Throws dengan `s` digunakan untuk menandai bahwa suatu method bisa melempar Exception.
+
+#### Penggunaan Throws
+
+Secara umum, Throws bisa ditulis seperti berikut:
+
+```java
+public void namaMethod() throws Exception {
+    // kode yang bisa menyebabkan exception
+}
+```
+
+Contoh penggunaan:
+
+```java
+public class ValidasiPassword {
+    // Method untuk memeriksa apakah password valid
+    public static void periksaPassword(String password) throws IllegalArgumentException {
+        if (password == null || password.length() < 8) {
+            throw new IllegalArgumentException("Password harus minimal 8 karakter dan tidak kosong.");
+        }
+
+        System.out.println("Password valid: " + password);
+    }
+
+    public static void main(String[] args) {
+        try {
+            periksaPassword("12345");  // Password terlalu pendek
+        } catch (IllegalArgumentException e) {
+            System.out.println("Terjadi kesalahan validasi: " + e.getMessage());
+        }
+
+        try {
+            periksaPassword("rahasia123");  // Password valid
+        } catch (IllegalArgumentException e) {
+            System.out.println("Terjadi kesalahan validasi: " + e.getMessage());
+        }
     }
 }
 ```
