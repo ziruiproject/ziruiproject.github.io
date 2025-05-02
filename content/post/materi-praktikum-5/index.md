@@ -590,4 +590,4 @@ Karena tipe data Non Primitive merupakah Object, maka tipe data ini memiliki Fie
 | Record (sejak Java 14)| Struktur data immutable dan ringan                                   | `record Point(int x, int y) {}`           | 
 null          |
 
-![alt text](materi5.png)
+![Link Materi 5](materi5.png)
