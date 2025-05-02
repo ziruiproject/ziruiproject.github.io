@@ -341,5 +341,3 @@ public class ValidasiPassword {
     }
 }
 ```
-
-![Link Artikel](qr.png)
