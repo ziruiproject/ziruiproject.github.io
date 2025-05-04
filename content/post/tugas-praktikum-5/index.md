@@ -118,3 +118,14 @@ class Main {
 4. Class `Alamat` memiliki constructor berparameter
 5. Alamat tidak boleh kosong, jika kosong, lempar `exception` atau berikan `default value`
 6. Boleh menambahkan method bantuan
+
+## 🗓️ Deadline
+
+- Tugas ini harus dikumpulkan **paling lambat** pada:
+
+  📅 **Hari/Tanggal**: Kamis, 15 Mei 2025
+  ⏰ **Pukul**: 18:00 WIB
+
+- Pengumpulan dilakukan melalui MyITS Classroom
+
+⛔ **Catatan**: Tugas yang terlambat, hanya dapat nilai maksimal 50 saja
