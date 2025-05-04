@@ -1,0 +1,751 @@
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><meta name=description content="Membahas tentang Object Oriented Programming"><title>Materi Praktikum 5</title>
+<link rel=canonical href=https://ziruiproject.github.io/post/materi-praktikum-5/><link rel=stylesheet href=/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css><meta property='og:title' content="Materi Praktikum 5"><meta property='og:description' content="Membahas tentang Object Oriented Programming"><meta property='og:url' content='https://ziruiproject.github.io/post/materi-praktikum-5/'><meta property='og:site_name' content='Yudha Sugiharto'><meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='Java'><meta property='article:tag' content='Algorithm'><meta property='article:published_time' content='2025-05-01T14:26:29+00:00'><meta property='article:modified_time' content='2025-05-01T14:26:29+00:00'><meta property='og:image' content='https://ziruiproject.github.io/post/materi-praktikum-5/cover.png'><meta name=twitter:title content="Materi Praktikum 5"><meta name=twitter:description content="Membahas tentang Object Oriented Programming"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content='https://ziruiproject.github.io/post/materi-praktikum-5/cover.png'><link rel="shortcut icon" href=/new-favicon.png></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label="Toggle Menu">
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hu_a5e5bf6173344bf6.jpg width=300 height=300 class=site-logo loading=lazy alt=Avatar>
+</a><span class=emoji>🖥️</span></figure><div class=site-meta><h1 class=site-name><a href=/>Yudha Sugiharto</a></h1><h2 class=site-description>Backend Developer</h2></div></header><ol class=menu-social><li><a href=https://github.com/ziruiproject target=_blank title=GitHub rel=me><svg class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li><li><a href=https://www.linkedin.com/in/yudha-sugiharto-programmer target=_blank title=Linkedin rel=me><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 11v5"/><path d="M8 8v.01"/><path d="M12 16v-5"/><path d="M16 16v-3a2 2 0 10-4 0"/><path d="M3 7a4 4 0 014-4h10a4 4 0 014 4v10a4 4 0 01-4 4H7a4 4 0 01-4-4z"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg>
+<span>Home</span></a></li><li><a href=/archives/><svg class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+<span>Archives</span></a></li><li><a href=/search/><svg class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+<span>Search</span></a></li><li class=menu-bottom-section><ol class=menu><li id=dark-mode-toggle><svg class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<svg class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg>
+<span>Dark Mode</span></li></ol></li></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">Table of contents</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#object-oriented-programming>Object Oriented Programming</a><ol><li><a href=#pengertian>Pengertian</a></li><li><a href=#karakteristik-umum>Karakteristik Umum</a></li></ol></li><li><a href=#class>Class</a><ol><li><a href=#pengertian-1>Pengertian</a></li><li><a href=#contoh-class>Contoh Class</a></li><li><a href=#field>Field</a></li><li><a href=#method>Method</a></li><li><a href=#this>This</a></li></ol></li><li><a href=#object>Object</a><ol><li><a href=#pengertian-2>Pengertian</a></li><li><a href=#membuat-object>Membuat Object</a></li><li><a href=#mengakses-field-dan-method>Mengakses Field dan Method</a></li></ol></li><li><a href=#constructor>Constructor</a><ol><li><a href=#pengertian-3>Pengertian</a></li><li><a href=#membuat-constructor>Membuat Constructor</a></li><li><a href=#constructor-dengan-parameter>Constructor dengan Parameter</a><ol><li><a href=#memanggil-constructor-dengan-parameter>Memanggil Constructor dengan Parameter</a></li></ol></li><li><a href=#constructor-overloading>Constructor Overloading</a><ol><li><a href=#memanggil-constructor-dengan-overloading>Memanggil Constructor dengan Overloading</a></li><li><a href=#memanggil-constructor-lain>Memanggil Constructor Lain</a></li></ol></li></ol></li><li><a href=#static>Static</a><ol><li><a href=#pengertian-4>Pengertian</a></li><li><a href=#penggunaan-static>Penggunaan Static</a><ol><li><a href=#static-field>Static Field</a></li><li><a href=#static-method>Static Method</a></li></ol></li></ol></li><li><a href=#primitive-vs-non-primitive>Primitive vs Non Primitive</a><ol><li><a href=#primitive>Primitive</a></li><li><a href=#non-primitive>Non Primitive</a></li></ol></li></ol></nav></div></section></aside><main class="main full-width"><article class="has-image main-article"><header class=article-header><div class=article-image><a href=/post/materi-praktikum-5/><img src=/post/materi-praktikum-5/cover_hu_5283c1bc8c186ef7.png srcset="/post/materi-praktikum-5/cover_hu_5283c1bc8c186ef7.png 800w, /post/materi-praktikum-5/cover_hu_8f9db76c6f1f070c.png 1600w" width=800 height=450 loading=lazy alt="Featured image of post Materi Praktikum 5"></a></div><div class=article-details><header class=article-category><a href=/categories/teaching/ style="background-color:#2a9d8f color:;color:">Teaching</a></header><div class=article-title-wrapper><h2 class=article-title><a href=/post/materi-praktikum-5/>Materi Praktikum 5</a></h2><h3 class=article-subtitle>Membahas tentang Object Oriented Programming</h3></div><footer class=article-time><div><svg class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published>01 May 2025</time></div><div><svg class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>10 minute read</time></div></footer></div></header><section class=article-content><h2 id=object-oriented-programming>Object Oriented Programming</h2><h3 id=pengertian>Pengertian</h3><p>Object Oriented Programming (OOP) secara literal berarti Pemrograman Berorientasi Object (PBO), adalah sudut pandang bahasa pemrorgaman yang berkonsep &ldquo;object&rdquo;.</p><h3 id=karakteristik-umum>Karakteristik Umum</h3><p>Secara umum, bahasa pemrograman disebut OOP jika memenuhi kriteria berikut:</p><ol><li>Berbasis objek dan class</li><li>Ada konsep properti dan method</li><li>Ada relasi antar objek</li><li>Fokus pada representasi dunia nyata</li></ol><h2 id=class>Class</h2><h3 id=pengertian-1>Pengertian</h3><p>Ciri-ciri utama dalam bahasa yang mendukung OOP adalah adanya <code>class</code>. Class adalah template atau cetakan. Apa yang dimaksud dari cetakan disini? Nanti kamu akan lihat pada point berikutnya.</p><h3 id=contoh-class>Contoh Class</h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Mahasiswa</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p>Perhatikan bahwa dalam menamakan class, ada baiknya menggunakan format <code>CamelCase</code> yaitu huruf awal setiap kata dibuat kapital.</p><p>Contoh penamaan yang benar</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>UserProfile</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p>Contoh penamaan yang salah</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>userprofile</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// atau userProfile juga salah</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=field>Field</h3><p>Class dapat menyimpan nilai atau yang dikenal sebagai field/attribute/properties (ketiga itu sama saja).</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Mahasiswa</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=n>nama</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>float</span><span class=w> </span><span class=n>ipk</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>final</span><span class=w> </span><span class=n>String</span><span class=w> </span><span class=n>KAMPUS</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s>&#34;ITS&#34;</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p>Perhatikan bahwa saat suatu Field itu final / konstan, maka nama Field ditulis kapital.</p><h3 id=method>Method</h3><p>Class juga dapat menyimpan &ldquo;kemampuan&rdquo; atau &ldquo;behavior&rdquo; dengan cara membuat <code>method</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Mahasiswa</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=n>nama</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>float</span><span class=w> </span><span class=n>ipk</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>final</span><span class=w> </span><span class=n>String</span><span class=w> </span><span class=n>KAMPUS</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s>&#34;ITS&#34;</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>info</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Nama: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>name</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;NRP: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>nrp</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;IPK: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>ipk</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Kampus: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>KAMPUS</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=nf>getName</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=nf>getNRP</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Silahkan lengkapi sisanya</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=this>This</h3><p>Adakalanya nama Field kamu sama dengan nama parameter atau nama variable yang lain.</p><p>Contohnya:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Mahasiswa</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=n>nama</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>float</span><span class=w> </span><span class=n>ipk</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>final</span><span class=w> </span><span class=n>String</span><span class=w> </span><span class=n>KAMPUS</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s>&#34;ITS&#34;</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>info</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Nama: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>name</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;NRP: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>nrp</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;IPK: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>ipk</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Kampus: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>KAMPUS</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=nf>getName</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=nf>getNRP</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=nf>setName</span><span class=p>(</span><span class=n>String</span><span class=w> </span><span class=n>name</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>name</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w> </span><span class=c1>// ini tidak berhasil</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Silahkan lengkapi sisanya</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><p>Untuk menghindari kebingungan tersebut, Java menyediakan keyword <code>this</code></p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Mahasiswa</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=n>nama</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>float</span><span class=w> </span><span class=n>ipk</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>final</span><span class=w> </span><span class=n>String</span><span class=w> </span><span class=n>KAMPUS</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s>&#34;ITS&#34;</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>info</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Nama: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>name</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;NRP: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>nrp</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;IPK: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>ipk</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Kampus: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>KAMPUS</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=nf>getName</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=nf>getNRP</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>setName</span><span class=p>(</span><span class=n>String</span><span class=w> </span><span class=n>name</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=c1>// this.name merujuk pada Field name</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>name</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>setNRP</span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>nrp</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Silahkan lengkapi sisanya</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h2 id=object>Object</h2><h3 id=pengertian-2>Pengertian</h3><p>Saat membahas Object Oriented Programming, sudah pasti membahas tentang Object. Apa itu object? Object adalah <strong>hasil dari class</strong>. Jika diibaratkan sebuah kue, maka <code>class</code> adalah cetakan kue, dan <code>object</code> adalah kue nya.</p><h3 id=membuat-object>Membuat Object</h3><p>Class Mahasiswa sebelumnya bisa dibuat menjadi object Mahasiswa dengan cara berikut:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Main</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>public</span><span class=w> </span><span class=kd>static</span><span class=w> </span><span class=kt>void</span><span class=w> </span><span class=nf>main</span><span class=p>(</span><span class=n>String</span><span class=o>[]</span><span class=w> </span><span class=n>args</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=c1>// Membuat object Mahasiswa</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>Mahasiswa</span><span class=w> </span><span class=n>mahasiswa1</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=k>new</span><span class=w> </span><span class=n>Mahasiswa</span><span class=p>()</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=kd>class</span> <span class=nc>Mahasiswa</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=n>nama</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>float</span><span class=w> </span><span class=n>ipk</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>final</span><span class=w> </span><span class=n>String</span><span class=w> </span><span class=n>KAMPUS</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s>&#34;ITS&#34;</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>info</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Nama: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>name</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;NRP: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>nrp</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;IPK: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>ipk</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Kampus: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>KAMPUS</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=nf>getName</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=nf>getNRP</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>setName</span><span class=p>(</span><span class=n>String</span><span class=w> </span><span class=n>name</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>name</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>setNRP</span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>nrp</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Silahkan lengkapi sisanya</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=mengakses-field-dan-method>Mengakses Field dan Method</h3><p>Object automatis memiliki <code>Field</code> dan <code>method</code> yang ada dalam Class. Sebagaimana kue yang dibuat dengan cetakan kue pasti mengikuti bentuk cetakannya.</p><p>Kamu bisa mengakses Field dan method dengan menggunakan <code>(.) titik</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Main</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>public</span><span class=w> </span><span class=kd>static</span><span class=w> </span><span class=kt>void</span><span class=w> </span><span class=nf>main</span><span class=p>(</span><span class=n>String</span><span class=o>[]</span><span class=w> </span><span class=n>args</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=c1>// Membuat object Mahasiswa</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>Mahasiswa</span><span class=w> </span><span class=n>mahasiswa1</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=k>new</span><span class=w> </span><span class=n>Mahasiswa</span><span class=p>();</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=c1>// Mengakses Field</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=n>mahasiswa1</span><span class=p>.</span><span class=na>ipk</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=c1>// Mengakses method</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>mahasiswa1</span><span class=p>.</span><span class=na>info</span><span class=p>();</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h2 id=constructor>Constructor</h2><h3 id=pengertian-3>Pengertian</h3><p>Constructor adalah <code>method spesial</code>. Kenapa spesial? Karena constructor adalah method yang bertanggung jawab untuk membuat object.</p><h3 id=membuat-constructor>Membuat Constructor</h3><p>Constructor memiliki nama yang sama dengan nama class nya. Misalnya dalam class Mahasiswa, maka nama constructornya adalah <code>Mahasiswa()</code>.</p><p>Secara default (bawaan), setiap class dalam Java sudah memiliki consctrutor kosong seperti berikut.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Mahasiswa</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=n>nama</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>float</span><span class=w> </span><span class=n>ipk</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>final</span><span class=w> </span><span class=n>String</span><span class=w> </span><span class=n>KAMPUS</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s>&#34;ITS&#34;</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Ini constructor</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Mahasiswa</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>       
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>info</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Nama: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>name</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;NRP: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>nrp</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;IPK: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>ipk</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Kampus: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>KAMPUS</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=nf>getName</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=nf>getNRP</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>setName</span><span class=p>(</span><span class=n>String</span><span class=w> </span><span class=n>name</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>name</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>setNRP</span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>nrp</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Silahkan lengkapi sisanya</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=constructor-dengan-parameter>Constructor dengan Parameter</h3><p>Karena constructor adalah method, kamu bisa memberikan parameter di constructor.</p><p>Contoh:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Mahasiswa</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=n>nama</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>float</span><span class=w> </span><span class=n>ipk</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>final</span><span class=w> </span><span class=n>String</span><span class=w> </span><span class=n>KAMPUS</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s>&#34;ITS&#34;</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Ini constructor dengan parameter</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Mahasiswa</span><span class=p>(</span><span class=n>String</span><span class=w> </span><span class=n>name</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>name</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>info</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Nama: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>name</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;NRP: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>nrp</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;IPK: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>ipk</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Kampus: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>KAMPUS</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=nf>getName</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=nf>getNRP</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>setName</span><span class=p>(</span><span class=n>String</span><span class=w> </span><span class=n>name</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>name</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>setNRP</span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>nrp</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Silahkan lengkapi sisanya</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h4 id=memanggil-constructor-dengan-parameter>Memanggil Constructor dengan Parameter</h4><p>Cara menggunakan contructor dengan parameter adalah sebagai berikut:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Main</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>public</span><span class=w> </span><span class=kd>static</span><span class=w> </span><span class=kt>void</span><span class=w> </span><span class=nf>main</span><span class=p>(</span><span class=n>String</span><span class=o>[]</span><span class=w> </span><span class=n>args</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=c1>// Membuat object Mahasiswa dengan constructor ber-parameter</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>Mahasiswa</span><span class=w> </span><span class=n>mahasiswa1</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=k>new</span><span class=w> </span><span class=n>Mahasiswa</span><span class=p>(</span><span class=s>&#34;Bin Laden&#34;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=c1>// Mengakses Field</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=n>mahasiswa1</span><span class=p>.</span><span class=na>ipk</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=c1>// Mengakses method</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>mahasiswa1</span><span class=p>.</span><span class=na>info</span><span class=p>();</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h3 id=constructor-overloading>Constructor Overloading</h3><p>Sama seperti method, constructor juga mendukung overloading, yaitu beberapa method yang sama dengan parameter (bisa jumlah atau tipe data) yang berbeda.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span><span class=lnt>47
+</span><span class=lnt>48
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Mahasiswa</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=n>nama</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>float</span><span class=w> </span><span class=n>ipk</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>final</span><span class=w> </span><span class=n>String</span><span class=w> </span><span class=n>KAMPUS</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s>&#34;ITS&#34;</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Sudah ada constructor (tanpa parameter)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Mahasiswa</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Tapi ada lagi constructor lain (dengan parameter)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Mahasiswa</span><span class=p>(</span><span class=n>String</span><span class=w> </span><span class=n>name</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>name</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Ada lagi constructor lain dengan parameter, namun jumlah parameternya berbeda</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Mahasiswa</span><span class=p>(</span><span class=n>String</span><span class=w> </span><span class=n>name</span><span class=p>,</span><span class=w> </span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>,</span><span class=w> </span><span class=kt>float</span><span class=w> </span><span class=n>ipk</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>name</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>nrp</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>ipk</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>ipk</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>info</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Nama: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>name</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;NRP: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>nrp</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;IPK: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>ipk</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Kampus: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>KAMPUS</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=nf>getName</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=nf>getNRP</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>setName</span><span class=p>(</span><span class=n>String</span><span class=w> </span><span class=n>name</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>name</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>setNRP</span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>nrp</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Silahkan lengkapi sisanya</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h4 id=memanggil-constructor-dengan-overloading>Memanggil Constructor dengan Overloading</h4><p>Cara menggunakan contructor dengan overloading adalah sebagai berikut:</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Main</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>public</span><span class=w> </span><span class=kd>static</span><span class=w> </span><span class=kt>void</span><span class=w> </span><span class=nf>main</span><span class=p>(</span><span class=n>String</span><span class=o>[]</span><span class=w> </span><span class=n>args</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=c1>// Constructor tanpa parameter</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>Mahasiswa</span><span class=w> </span><span class=n>mahasiswa1</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=k>new</span><span class=w> </span><span class=n>Mahasiswa</span><span class=p>();</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=c1>// Constructor dengan 1 Parameter</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>Mahasiswa</span><span class=w> </span><span class=n>mahasiswa2</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=k>new</span><span class=w> </span><span class=n>Mahasiswa</span><span class=p>(</span><span class=s>&#34;Mega Toto Walala Tibebe&#34;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=c1>// Constructor dengan 1 Parameter</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>Mahasiswa</span><span class=w> </span><span class=n>mahasiswa3</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=k>new</span><span class=w> </span><span class=n>Mahasiswa</span><span class=p>(</span><span class=s>&#34;Enikaen&#34;</span><span class=p>,</span><span class=w> </span><span class=n>5000000911</span><span class=p>,</span><span class=w> </span><span class=n>2</span><span class=p>.</span><span class=na>3f</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=c1>// Mengakses Field</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=n>mahasiswa1</span><span class=p>.</span><span class=na>ipk</span><span class=p>)</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=c1>// Mengakses method</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>mahasiswa1</span><span class=p>.</span><span class=na>info</span><span class=p>()</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h4 id=memanggil-constructor-lain>Memanggil Constructor Lain</h4><p>Constructor dapat memanggil constructor lain dengan menggunakan kata kunci <code>this</code>.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span><span class=lnt>38
+</span><span class=lnt>39
+</span><span class=lnt>40
+</span><span class=lnt>41
+</span><span class=lnt>42
+</span><span class=lnt>43
+</span><span class=lnt>44
+</span><span class=lnt>45
+</span><span class=lnt>46
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Mahasiswa</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=n>nama</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>float</span><span class=w> </span><span class=n>ipk</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>final</span><span class=w> </span><span class=n>String</span><span class=w> </span><span class=n>KAMPUS</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s>&#34;ITS&#34;</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Memanggil constructor lain dengan kata kunci this</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Mahasiswa</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>(</span><span class=s>&#34;Mahasiswa Misterius&#34;</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Mahasiswa</span><span class=p>(</span><span class=n>String</span><span class=w> </span><span class=n>name</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>name</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>Mahasiswa</span><span class=p>(</span><span class=n>String</span><span class=w> </span><span class=n>name</span><span class=p>,</span><span class=w> </span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>,</span><span class=w> </span><span class=kt>float</span><span class=w> </span><span class=n>ipk</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>name</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>nrp</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>ipk</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>ipk</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>info</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Nama: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>name</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;NRP: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>nrp</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;IPK: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>ipk</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Kampus: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=n>KAMPUS</span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=nf>getName</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=nf>getNRP</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>return</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>setName</span><span class=p>(</span><span class=n>String</span><span class=w> </span><span class=n>name</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>name</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>name</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>void</span><span class=w> </span><span class=nf>setNRP</span><span class=p>(</span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=k>this</span><span class=p>.</span><span class=na>nrp</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Silahkan lengkapi sisanya</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h2 id=static>Static</h2><h3 id=pengertian-4>Pengertian</h3><p>Pasti kamu sudah sering mendengar kata <code>static</code>. Seluruh Field dan method di dalam <code>class</code> akan terikat ke <code>object</code>. Artinya, kamu perlu membuat object terlebih dahulu untuk mengakses Field atau method nya.</p><p>Dengan <code>static</code> kamu bisa mengakses Field dan method tersebut secara langsung dari class nya tanpa harus membuat object terlebih dahulu.</p><p>Namun konsekuensinya adalah Field atau method yang static hanya terikat kepada <code>class</code> bukan ke object, dan Field atau method yang static <strong>hanya bisa</strong> mengakses sesuatu yang static pula.</p><h3 id=penggunaan-static>Penggunaan Static</h3><p>Cara penggunaan static seperti berikut:</p><h4 id=static-field>Static Field</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Mahasiswa</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=n>nama</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>float</span><span class=w> </span><span class=n>ipk</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=c1>// Membuat Field menjadi static</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>static</span><span class=w> </span><span class=kd>final</span><span class=w> </span><span class=n>String</span><span class=w> </span><span class=n>KAMPUS</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s>&#34;ITS&#34;</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=kd>class</span> <span class=nc>Main</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>public</span><span class=w> </span><span class=kd>static</span><span class=w> </span><span class=kt>void</span><span class=w> </span><span class=nf>main</span><span class=p>(</span><span class=n>String</span><span class=o>[]</span><span class=w> </span><span class=n>args</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=c1>// Memanggil Field yang statiic</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=n>Mahasiswa</span><span class=p>.</span><span class=na>KAMPUS</span><span class=p>);</span><span class=w> </span><span class=c1>// Akan menghasilkan &#34;ITS&#34;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h4 id=static-method>Static Method</h4><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-java data-lang=java><span class=line><span class=cl><span class=kd>class</span> <span class=nc>Mahasiswa</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=n>String</span><span class=w> </span><span class=n>nama</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>int</span><span class=w> </span><span class=n>nrp</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kt>float</span><span class=w> </span><span class=n>ipk</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>static</span><span class=w> </span><span class=kd>final</span><span class=w> </span><span class=n>String</span><span class=w> </span><span class=n>KAMPUS</span><span class=w> </span><span class=o>=</span><span class=w> </span><span class=s>&#34;ITS&#34;</span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>static</span><span class=w> </span><span class=kt>void</span><span class=w> </span><span class=nf>tempatKuliah</span><span class=p>()</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=s>&#34;Tempat Kuliah di: &#34;</span><span class=w> </span><span class=o>+</span><span class=w> </span><span class=p>);</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=kd>class</span> <span class=nc>Main</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=kd>public</span><span class=w> </span><span class=kd>static</span><span class=w> </span><span class=kt>void</span><span class=w> </span><span class=nf>main</span><span class=p>(</span><span class=n>String</span><span class=o>[]</span><span class=w> </span><span class=n>args</span><span class=p>)</span><span class=w> </span><span class=p>{</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>System</span><span class=p>.</span><span class=na>out</span><span class=p>.</span><span class=na>println</span><span class=p>(</span><span class=n>Mahasiswa</span><span class=p>.</span><span class=na>KAMPUS</span><span class=p>)</span><span class=w> </span><span class=p>;</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>        </span><span class=n>Mahasiswa</span><span class=p>.</span><span class=na>tempatKuliah</span><span class=p>();</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w>    </span><span class=p>}</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=w></span><span class=p>}</span><span class=w>
+</span></span></span></code></pre></td></tr></table></div></div><h2 id=primitive-vs-non-primitive>Primitive vs Non Primitive</h2><p>Tipe data dalam Java dibagi menjadi dua kategori, yaitu Primitive dan Non Primitive.</p><p>Seharusnya kamu sudah tau bahwa di Java ada beberapa tipe data seperti: int, double, String, char, boolean, dan lain-lain. Jika diperhatikan, semua tipe data tersebut dituis dengan huruf kecil, kecuali <code>String</code>. Tapi kenapa?</p><h3 id=primitive>Primitive</h3><p>Tipe data Primitive adalah tipe data bukan object. Contohnya int, double, boolean, float, char, dan lain-lain yang berawal huruf kecil.</p><p>Tipe data primitive selalu mempunyai default value (nilai awal jika tidak diisi), seperti <code>int</code> misalnya yang jika tidak diisi maka akan menghasilkan 0.</p><p>Karena bukan object, tipe data Primitive tidak mempunyai field ataupun method.</p><div class=table-wrapper><table><thead><tr><th>Tipe Data</th><th>Ukuran (bit)</th><th>Nilai Minimum</th><th>Nilai Maksimum</th><th>Default Value</th></tr></thead><tbody><tr><td>byte</td><td>8</td><td>-128</td><td>127</td><td>0</td></tr><tr><td>short</td><td>16</td><td>-32,768</td><td>32,767</td><td>0</td></tr><tr><td>int</td><td>32</td><td>-2^31 (-2,147,483,648)</td><td>2^31-1 (2,147,483,647)</td><td>0</td></tr><tr><td>long</td><td>64</td><td>-2^63</td><td>2^63-1</td><td>0L</td></tr><tr><td>float</td><td>32</td><td>~1.4e-45</td><td>~3.4e+38</td><td>0.0f</td></tr><tr><td>double</td><td>64</td><td>~4.9e-324</td><td>~1.8e+308</td><td>0.0d</td></tr><tr><td>char</td><td>16</td><td>&lsquo;\u0000&rsquo; (0)</td><td>&lsquo;\uffff&rsquo; (65,535)</td><td>&lsquo;\u0000&rsquo;</td></tr><tr><td>boolean</td><td>1</td><td>false</td><td>true</td><td>false</td></tr></tbody></table></div><h3 id=non-primitive>Non Primitive</h3><p>Kebalikan dari Primitive, tipe data Non Primitive merupakan Object. Contohnya adalah <code>String</code>. Tapi kenapa ditulis dengan huruf awal yang kapital?</p><p>Ingat bahwa saat menulis class, sangat dianjurkan untuk menulisnya dengan huruf awal setiap kata berupa kapital. Sehingga <code>String</code> (yang merupakan class) ditulis dengan huruf awal yang kapital.</p><p>Karena tipe data Non Primitive merupakah Object, maka tipe data ini memiliki Field dan Method. Namun, jika tidak diisi, nilai awalnya adalah <code>null</code>.</p><div class=table-wrapper><table><thead><tr><th>Tipe Data</th><th>Deskripsi</th><th>Contoh Penggunaan</th><th>Default Value</th></tr></thead><tbody><tr><td>String</td><td>Kumpulan karakter (objek dari class <code>String</code>)</td><td><code>String nama = "Yudha";</code></td><td>null</td></tr><tr><td>Array</td><td>Kumpulan elemen bertipe sama (juga merupakan objek)</td><td><code>int[] angka = {1, 2, 3};</code></td><td>null</td></tr><tr><td>Class</td><td>Blueprint untuk membuat objek custom</td><td><code>Mahasiswa mhs = new Mahasiswa();</code></td><td>null</td></tr><tr><td>Interface</td><td>Kontrak/struktur perilaku yang harus diimplementasikan oleh class lain</td><td><code>Runnable r = new MyRunnable();</code></td><td>null</td></tr><tr><td>Enum</td><td>Tipe khusus yang menyimpan nilai konstan</td><td><code>Hari h = Hari.SENIN;</code></td><td>null</td></tr><tr><td>Record (sejak Java 14)</td><td>Struktur data immutable dan ringan</td><td><code>record Point(int x, int y) {}</code></td><td></td></tr><tr><td>null</td><td></td><td></td><td></td></tr></tbody></table></div><p><img src=/post/materi-praktikum-5/materi5.png width=1000 height=1000 srcset="/post/materi-praktikum-5/materi5_hu_aa6dca03a98d51dc.png 480w, /post/materi-praktikum-5/materi5_hu_11ad554290050a7c.png 1024w" loading=lazy alt="Link Materi 5" class=gallery-image data-flex-grow=100 data-flex-basis=240px></p></section><footer class=article-footer><section class=article-tags><a href=/tags/java/>Java</a>
+<a href=/tags/algorithm/>Algorithm</a></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>Related content</h2><div class=related-content><div class="flex article-list--tile"><article class=has-image><a href=/post/materi-praktikum-4/><div class=article-image><img src=/post/materi-praktikum-4/cover.57291e2fd08d11809fb2a1a4a068103a_hu_f6c2ee444aabf7d8.png width=250 height=150 loading=lazy alt="Featured image of post Materi Praktikum 4" data-hash="md5-VykeL9CNEYCfsqGkoGgQOg=="></div><div class=article-details><h2 class=article-title>Materi Praktikum 4</h2></div></a></article><article class=has-image><a href=/post/materi-praktikum-3/><div class=article-image><img src=/post/materi-praktikum-3/cover.c6c27f5ccdd994990c2a41cfbd13891a_hu_2923f62fc3843d56.png width=250 height=150 loading=lazy alt="Featured image of post Materi Praktikum 3" data-hash="md5-xsJ/XM3ZlJkMKkHPvROJGg=="></div><div class=article-details><h2 class=article-title>Materi Praktikum 3</h2></div></a></article><article class=has-image><a href=/post/tugas-pertemuan-ke-3/><div class=article-image><img src=/post/tugas-pertemuan-ke-3/cover.0d2a4a9cae8a1ec76bde9b6dc8272e5b_hu_2301b9c2a99274f6.png width=250 height=150 loading=lazy alt="Featured image of post Tugas Pertemuan Ke 3" data-hash="md5-DSpKnK6KHsdr3pttyCcuWw=="></div><div class=article-details><h2 class=article-title>Tugas Pertemuan Ke 3</h2></div></a></article><article class=has-image><a href=/post/copy-code-rapi-ke-docs/><div class=article-image><img src=/post/copy-code-rapi-ke-docs/cover.715e383cf779ef9073e6cd4b6e3f698f_hu_cdc315b21beee795.png width=250 height=150 loading=lazy alt="Featured image of post Copy Code Rapi ke Docs" data-hash="md5-cV44PPd575Bz5s1Lbj9pjw=="></div><div class=article-details><h2 class=article-title>Copy Code Rapi ke Docs</h2></div></a></article></div></div></aside><script src=https://giscus.app/client.js data-repo=ziruiproject/ziruiproject.github.io data-repo-id=R_kgDOOVa4lg data-category=Announcements data-category-id=DIC_kwDOOVa4ls4Co48f data-mapping=pathname data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=noborder_light data-lang=en data-loading crossorigin=anonymous async></script><script>function setGiscusTheme(e){let t=document.querySelector("iframe.giscus-frame");t&&t.contentWindow.postMessage({giscus:{setConfig:{theme:e}}},"https://giscus.app")}(function(){addEventListener("message",t=>{if(event.origin!=="https://giscus.app")return;e()}),window.addEventListener("onColorSchemeChange",e);function e(){setGiscusTheme(document.documentElement.dataset.scheme==="light"?"noborder_light":"noborder_gray")}})()</script><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2025 Yudha Sugiharto</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.30.0>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js defer></script><script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>
